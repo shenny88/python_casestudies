@@ -2,7 +2,7 @@
 #    prints the words in a comma-separated sequence after sorting them alphabetically.
 mystr = input("Enter string seperated by comma: ")
 mystr_list = sorted(mystr.split(","))
-mystr = ",".join(mystr_list)
-print(mystr)
+print(",".join(mystr_list))
+
 
 
