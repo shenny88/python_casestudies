@@ -9,7 +9,14 @@ C = 50
 H = 30
 D = "100,150,180"
 D_list = D.split(",")
+Q_list = []
+str_list = []
 
 for item in D_list:
     Q = math.sqrt((2 * C * int(item)) / H)
-    Q = print(math.floor(Q),end=" , ")
+    Q_list.append(math.floor(Q))
+
+for i in Q_list:
+    str_list.append(str(i))
+
+print(",".join(str_list))
